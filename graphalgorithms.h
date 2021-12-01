@@ -11,6 +11,7 @@ struct wtEdge
 
 class graphfunctions
 {
+    
     private:
     vector<vector<pair<int,int>>> weighted_graph;
     vector<vector<int>> unweighted_graph;
@@ -20,11 +21,8 @@ class graphfunctions
     vector<bool> visited;
     vector<int> parent;
     const int INF=1e9;
+    
     public:
-    void helloworld(int x,int y)
-    {
-        cout<<"ans "<<x+y<<endl;
-    }
     vector<vector<pair<int,int>>> build_weighted_list(int n,int e)
     {
         weighted_graph=vector<vector<pair<int,int>>> (n);
